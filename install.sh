@@ -856,8 +856,8 @@ add_port_configuration() {
 
     # 生成密钥
     local tmp_key=$(generate_keys "$uuid")
-    local private_key=$(echo "$tmp_key" | awk 'NR==1{print $2}')
-    local public_key=$(echo "$tmp_key" | awk 'NR==2{print $2}')
+    local private_key=$(echo "$tmp_key" | awk 'NR==1{print $NF}')
+    local public_key=$(echo "$tmp_key" | awk 'NR==2{print $NF}')
     echo -e "${YELLOW}私钥 = ${CYAN}${private_key}${NONE}"
     echo -e "${YELLOW}公钥 = ${CYAN}${public_key}${NONE}"
     print_line

@@ -5,9 +5,15 @@
 因为前段时间买了几个isp静态住宅，使用链式代理不方便，所以才有此想法
 
 脚本调用
-`bash <(curl -L https://raw.githubusercontent.com/wzwys9/my_abc/main/install.sh)`
+`bash <(curl -L https://raw.githubusercontent.com/CandyMujForks/wzwys9.my_abc/main-my/install.sh)`
 
 
 sudo apt purge -y fzf bat eza fd-find ripgrep btop ncdu tmux
 
 sudo apt autoremove -y
+
+
+
+# 原项目有bug
+
+1.  `# 生成密钥` 处公钥获取的有问题，得到的是 `(PublicKey):`
